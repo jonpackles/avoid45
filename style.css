@@ -1,0 +1,134 @@
+body {
+  
+  font-family: Courier New;
+}
+
+
+#userEntry {
+  font-size: 100px;
+  margin:auto;
+  text-align: center;
+  font-family: Courier New;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  font-weight: bold;
+  color: black;
+  
+ 
+}
+
+#scoreCount {
+  position: fixed;
+  top:0px;
+  left: 10px;
+  z-index: 100;
+  background-color: black;
+  color:white;
+}
+
+
+#formContainer {
+  position: fixed;
+  top:35%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 500;
+
+ /* margin-bottom: 20px; */
+}
+
+input:focus {
+  outline:none;
+}
+
+
+.ticker {
+/*  background-color: blue;*/
+  color: white;
+  font-size: 80px;
+  border-bottom: 4px solid white;
+}
+
+
+
+
+
+@keyframes customticker {
+  0% {
+    -webkit-transform: translate3d(5%, 0, 0);
+    transform: translate3d(5%, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+/* Formatting the full-width ticker wrapper background and font color */
+#tickerwrap {
+  width: 100%;
+  overflow: hidden;
+  /*background-color: blue;*/
+  color: #fff;
+  border-bottom: 4px solid white;
+}
+
+
+/* Formatting the ticker content background, font color, padding and exit state */
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: customticker;
+  animation-name: customticker;
+  -webkit-animation-duration: 80s;
+  animation-duration: 80s;
+}
+
+#scoreArea {
+  display:none;
+}
+
+#start{
+ 
+  width: 400px;
+  margin:auto;
+  margin-top: 200px;
+  background-color: #7399BF;
+  text-align: center;
+  color: white;
+}
+
+#startButton {
+  background-color: red;
+  color: white;
+}
+
+#startButton:hover {
+  background-color:#ff5f5f;
+  cursor: pointer;
+}
+
+
+
+
+#prompt{
+
+
+     animation:prompt 0.5s 1;
+    -webkit-animation:signup-response 0.5s 1;
+    animation-fill-mode: forwards;
+
+    animation-delay:2s;
+    -webkit-animation-delay:1s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+
+} 
+
+
